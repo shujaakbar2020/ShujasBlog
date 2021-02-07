@@ -25,7 +25,7 @@ SECRET_KEY = '4!37nb=b21_&q@#ibai-&ghr_y%=-l!1x82heu-#^ay7g3h2#t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['shujablog.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -119,9 +119,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-VENV_PATH = os.path.dirname(BASE_DIR)
-STATIC_ROOT = os.path.join(VENV_PATH, 'static/')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(VENV_PATH, 'MyBlog/media_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
